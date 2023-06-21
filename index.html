@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+
+    * {
+        font-family: 'Roboto Thin', sans-serif;
+    }
+
+    body {
+        background: url("layered-waves-haikei.svg") no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .login-box {
+        width: 400px;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        margin-left: 10rem;
+        background: rgb(0, 179, 248, .1);
+        border-radius: 16px;
+        box-shadow: 0 4px 2000px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+
+    h1 {
+        text-align: center;
+        font-weight: 500;
+        color: white;
+        font-size: 2.25rem;
+    }
+
+    .input-forms {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 50px;
+        gap: 10px;
+    }
+
+    input {
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        margin-bottom: 1rem;
+        padding: 10px;
+        color: white;
+    }
+
+    input:focus {
+        outline: none;
+        color: white;
+    }
+
+    .login_button {
+        background: none;
+        border: 1px solid white;
+        border-radius: 16px;
+        padding: 10px;
+        color: white;
+        font-weight: 900;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 100%;
+    }
+
+    .login_button:hover {
+        background: white;
+        color: black;
+    }
+
+    .striped {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .striped-line {
+        flex: auto;
+        border: none;
+        outline: none;
+        height: 2px;
+        background: #5e5e5e;
+    }
+
+    .striped-text {
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: inherit;
+        color: #989898;
+        margin: 0 1rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 10px;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .other_logins {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .other_button {
+        background: none;
+        border: 1px solid white;
+        border-radius: 16px;
+        padding: 10px;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 10px;
+        justify-items: start;
+        line-height: 1.5rem
+    }
+
+    .other_button:hover {
+        background: white;
+        color: black;
+    }
+
+    .forgot_password {
+        font-size: 0.9rem;
+    }
+
+
+</style>
+
+<body>
+
+<div class="container">
+
+    <div class="login-box">
+        <h1>Sign in</h1>
+
+        <div class="input-forms">
+            <input type="text" name="username" placeholder="Username" autocomplete="username" required>
+            <input type="password" name="password" autocomplete="password" placeholder="Password" required>
+
+            <div class="buttons">
+                <button type="submit" class="login_button">Sign in</button>
+            </div>
+
+            <a href="#" class="forgot_password">Forgot Password?</a>
+
+
+            <div class="striped">
+                <span class="striped-line"></span>
+                <span class="striped-text">Or</span>
+                <span class="striped-line"></span>
+            </div>
+
+            <div class="other_logins">
+                <button class="other_button" style="">
+                    <img src='https://www.vectorlogo.zone/logos/google/google-icon.svg' alt="google_logo" width="20px">
+                    Log in with Google
+                </button>
+                <button class="other_button">
+                    <img src='https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg' alt="microsoft_logo" width="20px">
+                    Log in with Microsoft</button>
+                <button class="other_button">
+                    <img src='https://www.vectorlogo.zone/logos/apple/apple-icon.svg' alt="apple_logo" width="20px">
+                    Log in with Apple</button>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
